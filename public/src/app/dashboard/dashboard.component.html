@@ -1,0 +1,13 @@
+<a [routerLink] = "['/create']">Create a New Poll</a> 
+<a id="logout" (click) = "logout()"> Logout </a>
+<div>
+    <div>
+        <div>
+            <h2>Welcome {{ name }}!</h2> 
+        </div>
+        <div>
+            <h4>Current Polls:</h4>
+        </div>
+    </div>
+    <app-table [displaypolls] = "displaypolls"></app-table>
+</div>
